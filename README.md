@@ -2,4 +2,4 @@
 The app of Formula1 dashboard constructed by pyqt package.  
 Please install pyqt package first.   
 
-![pageWidget.png]
+![pageWidgets.png]
