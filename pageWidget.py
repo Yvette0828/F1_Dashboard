@@ -17,9 +17,9 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
  
         #Load the UI Page by PyQt6
-        uic.loadUi('hw_pageWidget.ui', self)
+        uic.loadUi('pageWidget.ui', self)
         self.tabWidget.setCurrentIndex(0)
-        self.setWindowTitle('Homework_pageWidges')
+        self.setWindowTitle('Formula1 Dashboard')
 
         # Signals
         # Tab 1
@@ -39,8 +39,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.update_pie()
 
         # Tab 3
-        self.file_src = "../images/F1_driver/"
-        self.picName = sorted(os.listdir(self.file_src), key=lambda x: os.path.getmtime(os.path.join('../images/F1_driver/', x))) # 按照修改時間排序
+        self.file_src = "./images/F1_driver/"
+        self.picName = sorted(os.listdir(self.file_src), key=lambda x: os.path.getmtime(os.path.join('./images/F1_driver/', x))) # 按照修改時間排序
         # print(self.picName)
         self.imgageCount = len(self.picName)
         self.driver_comboBox.addItems(self.seasons['Driver'].unique())
