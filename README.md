@@ -1,4 +1,4 @@
-# F1 Dashboard
+# Formula1 Dashboard
 The app of Formula1 dashboard constructed by pyqt package.  
 Please install the required packages first.   
 ```python
